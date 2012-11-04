@@ -32,10 +32,11 @@ DISABLE_AUTO_TITLE=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(jira git rbenv git-flow ruby vagrant command-not-found bundler redis-cli)
+plugins=(git rbenv git-flow ruby vagrant bundler redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
+export LC_ALL=en_US.UTF-8
 export PATH=/home/leifg/.rbenv/shims:/home/leifg/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/local/bin/git-scripts/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/jre/
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
