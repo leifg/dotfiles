@@ -1,12 +1,13 @@
 [user]
   name = Leif Gensert
-  email = leif@gensert.de
+  email = leif.gensert@stylefruits.de
 [core]
   editor = vim
 [diff]
 [color]
   ui = auto
 [alias]
+  meld = !/home/leifg/tools/git-meld/git-meld.pl
   st = status
   ci = commit
   co = checkout
@@ -45,5 +46,7 @@
   l = "!. ~/.githelpers && pretty_git_log"
   la = !git l --all
 
+[merge]
+  tool = meld
 [mergetool]
   keepBackup = false
