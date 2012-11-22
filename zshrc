@@ -32,16 +32,20 @@ DISABLE_AUTO_TITLE=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rbenv git-flow ruby vagrant bundler redis-cli)
+plugins=(git git-flow vagrant redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.UTF-8
-export PATH=/home/leifg/.rbenv/shims:/home/leifg/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/local/bin/git-scripts/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=~/.rbenv/shims:~/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin/git-scripts/:/usr/sbin:/usr/bin:/sbin:/bin
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/jre/
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
-export TMUXIFIER="$HOME/code/other/tmuxifier"
+export TMUXIFIER="$HOME/projects/tmuxifier"
 
-[[ -s "$HOME/.secret" ]] && source "$HOME/.secret"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+[[ -s "$HOME/.private" ]] && source "$HOME/.private"
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
 [[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
+
+return 0
