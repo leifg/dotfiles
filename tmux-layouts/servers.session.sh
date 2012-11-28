@@ -2,7 +2,7 @@ if initialize_session "servers"; then
 
   load_window "sfweb-server"
   load_window "cybot-server"
-  load_window "team_dashboard-server"
+  load_window "jenkins_dashboard-server"
 
   select_window 0
 
