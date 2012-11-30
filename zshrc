@@ -32,7 +32,7 @@ DISABLE_AUTO_TITLE=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow vagrant redis-cli)
+plugins=(bundler git git-flow github vagrant redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,6 +43,7 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 export TMUXIFIER="$HOME/projects/tmuxifier"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(hub alias -s)"
 
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
