@@ -1,11 +1,12 @@
---- 
-:verbose: true
-:update_sources: true
-:sources: 
+---
+:backtrace: false
+:benchmark: false
+:bulk_threshold: 1000
+:sources:
 - http://gemcutter.org
 - http://gems.rubyforge.org/
 - http://gems.github.com
+- http://gemserver.office.sf.local/
+:update_sources: true
+:verbose: true
 gem: --no-rdoc --no-ri
-:bulk_threshold: 1000
-:backtrace: false
-:benchmark: false

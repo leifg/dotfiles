@@ -37,7 +37,7 @@ plugins=(git rbenv git-flow ruby vagrant bundler redis-cli)
 source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.UTF-8
-export PATH=/home/leifg/.rbenv/shims:/home/leifg/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/local/bin/git-scripts/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=~/bin:~/.rbenv/shims:~/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/local/bin/git-scripts/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/jre/
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 export TMUXIFIER="$HOME/code/other/tmuxifier"
