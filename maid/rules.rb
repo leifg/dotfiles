@@ -1,3 +1,5 @@
+MOVIES = '~/Movies/queuebrake/to_malter'
+
 Maid.rules do
   rule 'Mac OS X applications in disk images' do
     trash(dir('~/Downloads/*.dmg'))
@@ -20,9 +22,17 @@ Maid.rules do
   end
 
   rule 'Old Movies' do
-    dir('~/Movies/queuebrake/to_malter').each do |path|
+    dir("#{MOVIES}/*").each do |path|
       if 3.weeks.since?(accessed_at(path))
         remove(path)
+      end
+    end
+  end
+
+  rule 'Converted Movies' do
+    dir('~/Movies/queuebrake/convert_ingoing/*').each do |path|
+      if 2.days.since?(accessed_at(path))
+        move(path, MOVIES)
       end
     end
   end
