@@ -8,7 +8,7 @@
 
 dir=~/projects/dotfiles                    # dotfiles directory
 olddir=~/projects/dotfiles_old             # old dotfiles backup directory
-files="bash_aliases bashrc gemrc gitconfig githelpers maid oh-my-zsh private tmux-layouts tmux.conf zshrc"    # list of files/folders to symlink in homedir
+files="bash_aliases bashrc gemrc gitconfig githelpers oh-my-zsh private tmux-layouts tmux.conf zshrc"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -39,7 +39,7 @@ if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     fi
     # Set the default shell to zsh if it isn't currently set to zsh
     if [[ ! $(echo $SHELL) == "/bin/zsh" ]]; then
-        sudo chsh -s $(which zsh)
+        sudo chsh $USER -s $(which zsh)
     fi
 else
     # If zsh isn't installed, get the platform of the current machine
