@@ -1,4 +1,4 @@
-window_root "~/projects/marozi"
+window_root "~/projects/monquiro"
 new_window "server"
 
 run_cmd "bundle exec rails s"

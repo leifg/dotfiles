@@ -1,4 +1,4 @@
-window_root "~/projects/marozi"
+window_root "~/projects/monquiro"
 new_window "console"
 run_cmd "mongo"
 split_v 50

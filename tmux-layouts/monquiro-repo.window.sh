@@ -1,4 +1,4 @@
-window_root "~/projects/marozi"
+window_root "~/projects/monquiro"
 new_window "repo"
 run_cmd "bundle exec guard"
 split_v 50
