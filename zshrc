@@ -37,7 +37,7 @@ plugins=(bundler git git-flow vagrant redis-cli)
 source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.UTF-8
-export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/jre/
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 export TMUXIFIER="$HOME/projects/tmuxifier"
 export NODE_PATH=/usr/local/lib/node_modules
