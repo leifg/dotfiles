@@ -38,8 +38,8 @@ source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim
-export PATH=~/bin:~/.rbenv/shims:~/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin/git-scripts:/usr/sbin:/usr/bin:/sbin:/bin
-export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+export PATH=~/bin:~/.rbenv/shims:~/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin/git-scripts:/usr/local/share/npm/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 export TMUXIFIER="$HOME/projects/other/tmuxifier"
 export NODE_PATH=/usr/local/lib/node_modules
