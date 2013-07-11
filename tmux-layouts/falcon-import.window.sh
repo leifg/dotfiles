@@ -11,6 +11,6 @@ run_cmd "bundle exec pry"
 split_v 50
 
 select_pane 3
-run_cmd "redis-cli -n 4"
+run_cmd "redis-cli -n 5"
 
 select_pane 1
