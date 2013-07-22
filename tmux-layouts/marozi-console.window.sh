@@ -1,6 +1,6 @@
 window_root "~/projects/marozi"
 new_window "console"
-run_cmd "mongo"
+run_cmd "psql marozi_development"
 split_v 50
 
 select_pane 1
