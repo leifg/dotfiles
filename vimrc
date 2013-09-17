@@ -14,6 +14,11 @@ Bundle 'gmarik/vundle'
 
 " custom vundles
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'kien/ctrlp.vim'
 
 syntax on
 filetype plugin indent on
+
+" Ignore bundle stuff
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '/vendor/bundle$'
