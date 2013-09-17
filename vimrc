@@ -7,3 +7,5 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 syntax on
+execute pathogen#infect()
+filetype plugin indent on
