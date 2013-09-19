@@ -15,8 +15,11 @@ Bundle 'gmarik/vundle'
 " custom vundles
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'kien/ctrlp.vim'
+Bundle 'terryma/vim-multiple-cursors'
 
 syntax on
+set background=dark
+colorscheme solarized
 filetype plugin indent on
 
 " Ignore bundle stuff
