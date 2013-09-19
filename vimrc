@@ -25,3 +25,7 @@ filetype plugin indent on
 " Ignore bundle stuff
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '/vendor/bundle$'
+
+" Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup

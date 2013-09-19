@@ -2,3 +2,4 @@ oh-my-zsh
 private
 maid/*.log
 vim/.netrwhist
+vim/backup/*.swp
