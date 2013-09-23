@@ -22,6 +22,8 @@ set number
 set background=dark
 colorscheme solarized
 filetype plugin indent on
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set list
 
 " Ignore bundle stuff
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
