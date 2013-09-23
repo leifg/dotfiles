@@ -18,6 +18,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'terryma/vim-multiple-cursors'
 
 syntax on
+set number
 set background=dark
 colorscheme solarized
 filetype plugin indent on
