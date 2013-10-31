@@ -1,1 +1,1 @@
-alias stuff_restart="tmux kill-session -t background; tmux send -t gateway.0 'tmuxifier s background' ENTER"
+alias be=bundle exec
