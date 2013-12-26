@@ -16,11 +16,12 @@ Bundle 'gmarik/vundle'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'kien/ctrlp.vim'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'chriskempson/base16-vim'
 
 syntax on
 set number
 set background=dark
-colorscheme solarized
+colorscheme base16-default
 filetype plugin indent on
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
