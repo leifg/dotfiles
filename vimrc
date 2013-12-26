@@ -21,6 +21,7 @@ Bundle 'chriskempson/base16-vim'
 syntax on
 set number
 set background=dark
+let base16colorspace=256
 colorscheme base16-default
 filetype plugin indent on
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
