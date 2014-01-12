@@ -46,7 +46,6 @@ export TMUXIFIER="$HOME/projects/other/tmuxifier"
 export NODE_PATH=/usr/local/lib/node_modules
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-eval "$(hub alias -s)"
 
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
