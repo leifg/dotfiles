@@ -8,4 +8,4 @@ if initialize_session "talon"; then
 fi
 
 # Finalize session creation and switch/attach to it.
-finalize_and_go_to_session1
+finalize_and_go_to_session
