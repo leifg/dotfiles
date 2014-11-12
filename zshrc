@@ -52,7 +52,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
 [[ -s "$HOME/.oracle_env" ]] && source "$HOME/.oracle_env"
 
-return 0
+### Add $GOPATH to $PATH
+
+export PATH="$GOPATH/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+return 0
