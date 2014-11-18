@@ -5,14 +5,14 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="gallois"
+ZSH_THEME="nicoulaj"
 
 . ~/.bash_aliases
 DISABLE_AUTO_TITLE=true
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Base16 Shell
+BASE16_SHELL="$HOME/dotfiles/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -32,7 +32,7 @@ DISABLE_AUTO_TITLE=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast git-extras git-flow vagrant redis-cli)
+plugins=(git gitfast git-extras git-flow vagrant redis-cli rbenv tmux)
 
 source $ZSH/oh-my-zsh.sh
 
