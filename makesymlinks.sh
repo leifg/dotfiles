@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bash_aliases bashrc gemrc gitconfig githelpers maid oh-my-zsh oracle_env private tmux-layouts tmux.conf vim vimrc zshrc"    # list of files/folders to symlink in homedir
+files="gemrc gitconfig githelpers zprezto oracle_env private tmux-layouts tmux.conf vim vimrc zlogin zlogout zpreztorc zprofile zshenv zshrc"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -33,9 +33,13 @@ done
 function install_zsh {
 # Test to see if zshell is installed.  If it is:
 if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
-    # Clone my oh-my-zsh repository from GitHub only if it isn't already present
-    if [[ ! -d $dir/oh-my-zsh/ ]]; then
-        git clone http://github.com/robbyrussell/oh-my-zsh.git
+    # Clone my prezto repository from GitHub only if it isn't already present
+    if [[ ! -d $dir/zprezto/ ]]; then
+        git clone --recursive http://github.com/sorin-ionescu/prezto.git $dir/zprezto
+        cd $dir/zprezto
+        git submodule deinit modules/prompt/external/pure
+        git rm modules/prompt/external/pure
+        git submodule add https://github.com/leifg/pure.git modules/prompt/external/pure
     fi
     # Set the default shell to zsh if it isn't currently set to zsh
     if [[ ! $(echo $SHELL) == "/bin/zsh" ]]; then
