@@ -8,7 +8,26 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="aliases gemrc gitconfig githelpers zprezto oracle_env private tmux-layouts tmux.conf vim vimrc zlogin zlogout zpreztorc zprofile zshenv zshrc"    # list of files/folders to symlink in homedir
+
+# list of files/folders to symlink in homedir
+read -d '' files << EOF
+  aliases
+  gemrc
+  gitconfig
+  githelpers
+  oracle_env
+  private
+  tmux-layouts
+  tmux.conf
+  vim
+  vimrc
+  zlogin
+  zlogout
+  zprezto
+  zprofile
+  zshenv
+  zshrc
+EOF
 
 ##########
 
@@ -61,3 +80,5 @@ fi
 }
 
 install_zsh
+
+rm -f tmux-layouts/tmux-layouts
