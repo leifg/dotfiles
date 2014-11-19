@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="gemrc gitconfig githelpers zprezto oracle_env private tmux-layouts tmux.conf vim vimrc zlogin zlogout zpreztorc zprofile zshenv zshrc"    # list of files/folders to symlink in homedir
+files="aliases gemrc gitconfig githelpers zprezto oracle_env private tmux-layouts tmux.conf vim vimrc zlogin zlogout zpreztorc zprofile zshenv zshrc"    # list of files/folders to symlink in homedir
 
 ##########
 

@@ -22,3 +22,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
 [[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
 [[ -s "$HOME/.oracle_env" ]] && source "$HOME/.oracle_env"
+
+# load aliases
+
+[[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases"
