@@ -17,7 +17,6 @@ fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # load various variables
-[[ -s "$HOME/dotfiles/base16-shell/base16-default.dark.sh" ]] && source "$HOME/dotfiles/base16-shell/base16-default.dark.sh"
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
 [[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
@@ -29,3 +28,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+
+source ~/.xsh
