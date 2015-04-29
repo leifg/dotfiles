@@ -3,3 +3,4 @@ private
 maid/*.log
 vim/.netrwhist
 vim/backup/*.swp
+.DS_Store
