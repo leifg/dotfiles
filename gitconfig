@@ -1,5 +1,6 @@
 [user]
   name = Leif Gensert
+	signingkey = DF6549FF
 [core]
   editor = vim
 [diff]
@@ -51,3 +52,9 @@
 	tool = opendiff
 [push]
 	default = simple
+[github]
+	user = leifg
+[ghi]
+	token = !security find-internet-password -a leifg -s github.com -l 'ghi token' -w
+[commit]
+	gpgsign = true
