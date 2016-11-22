@@ -1,1 +1,5 @@
 alias be="bundle exec"
+alias mtf="git log --pretty=format: --name-only | grep -v '^$' | sort | uniq -c | sort -rg"
+alias solaris_project="git init; git config --add hub.host github.solarisbank.de; git config user.email leif.gensert.extern@solarisbank.de; git config user.signingkey 2BCE0BAD"
+alias dcu="docker-compose up -d --build"
+alias dcl="docker-compose logs -t --follow --tail=500"
