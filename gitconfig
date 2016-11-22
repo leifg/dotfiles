@@ -1,6 +1,7 @@
 [user]
   name = Leif Gensert
-	signingkey = DF6549FF
+  signingkey = DF6549FF
+  email = leif@leif.io
 [core]
   editor = vim
 [diff]
@@ -13,6 +14,7 @@
   di = diff
   dc = diff --cached
   amend = commit --amend
+  branches = for-each-ref --sort=-committerdate refs/heads/
   aa = add --all
   ff = merge --ff-only
   pullff = pull --ff-only
@@ -66,3 +68,7 @@
 	diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [interactive]
 	diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
