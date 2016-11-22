@@ -20,7 +20,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
 [[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
-[[ -s "$HOME/.oracle_env" ]] && source "$HOME/.oracle_env"
 
 # load aliases
 
@@ -28,6 +27,3 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-eval "$(thefuck --alias)"
-. $HOME/.asdf/asdf.sh

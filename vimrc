@@ -8,14 +8,10 @@ imap <left> <nop>
 imap <right> <nop>
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 Bundle 'gmarik/vundle'
-
-" custom vundles
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'kien/ctrlp.vim'
-Bundle 'terryma/vim-multiple-cursors'
+call vundle#end()
 
 syntax on
 set number

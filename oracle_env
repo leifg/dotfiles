@@ -1,3 +1,0 @@
-ORACLE_HOME='/usr/local/opt/instantclient'; export ORACLE_HOME
-ORACLE_SID=PB; export ORACLE_SID
-ORACLE_UNQNAME=$ORACLE_SID; export ORACLE_UNQNAME
