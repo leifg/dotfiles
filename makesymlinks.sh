@@ -15,15 +15,14 @@ read -d '' files << EOF
   gemrc
   gitconfig
   githelpers
-  oracle_env
   private
-  tmux-layouts
   tmux.conf
   vim
   vimrc
   zlogin
   zlogout
   zprezto
+  zpreztorc
   zprofile
   zshenv
   zshrc
