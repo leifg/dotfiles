@@ -34,7 +34,7 @@ fi
 #
 
 export GOPATH=$HOME/projects/go_workspace
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 export TMUXIFIER="$HOME/projects/other/tmuxifier"
 
