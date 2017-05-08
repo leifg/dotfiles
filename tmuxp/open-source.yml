@@ -1,0 +1,8 @@
+session_name: open-source
+windows:
+- window_name: repos
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/open_source
+  panes:
+    - pane

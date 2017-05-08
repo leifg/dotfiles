@@ -17,6 +17,7 @@ read -d '' files << EOF
   githelpers
   private
   tmux.conf
+  tmuxp
   vim
   vimrc
   zlogin

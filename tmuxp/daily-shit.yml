@@ -1,0 +1,8 @@
+session_name: daily-shit
+windows:
+- window_name: downloads
+  layout: tiled
+  shell_command_before:
+    - cd ~/
+  panes:
+    - pane
