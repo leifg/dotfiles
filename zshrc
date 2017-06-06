@@ -16,6 +16,11 @@ fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# load kerl and kiex
+
+[[ -s "$KERL_DEFAULT_INSTALL_DIR/$ERLANG_VERSION/activate" ]] && source "$KERL_DEFAULT_INSTALL_DIR/$ERLANG_VERSION/activate"
+[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
+
 # load various variables
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
