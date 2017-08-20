@@ -4,6 +4,7 @@
   email = leif@leif.io
 [core]
   editor = vim
+  excludesfile = /Users/leifg/.gitignore_global
 [diff]
 [color]
   ui = auto
