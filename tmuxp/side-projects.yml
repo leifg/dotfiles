@@ -1,8 +1,14 @@
 session_name: side-projects
 windows:
-- window_name: burt
+- window_name: release_ping
   layout: tiled
   shell_command_before:
-    - cd ~/projects/side_projects
+    - cd ~/projects/side_projects/release_ping
+  panes:
+    - pane
+- window_name: release_ping_frontend
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/side_projects/release_ping-frontend
   panes:
     - pane
