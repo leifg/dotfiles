@@ -53,26 +53,26 @@
 [mergetool]
   keepBackup = false
 [merge]
-	tool = opendiff
+  tool = opendiff
 [push]
-	default = simple
+  default = simple
 [github]
-	user = leifg
+  user = leifg
 [ghi]
-	token = !security find-internet-password -a leifg -s github.com -l 'ghi token' -w
+  token = !security find-internet-password -a leifg -s github.com -l 'ghi token' -w
 [commit]
-	gpgsign = true
+  gpgsign = true
 [diff]
-	compactionHeuristic = 1
+  compactionHeuristic = 1
 [pager]
-	log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-	show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-	diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [interactive]
-	diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+  diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [difftool "Kaleidoscope"]
     cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
