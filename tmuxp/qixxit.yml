@@ -1,8 +1,0 @@
-session_name: qixxit
-windows:
-- window_name: server
-  layout: tiled
-  shell_command_before:
-    - cd ~/projects/qixxit
-  panes:
-    - pane
