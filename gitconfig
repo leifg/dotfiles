@@ -64,6 +64,7 @@
   gpgsign = true
 [diff]
   compactionHeuristic = 1
+  tool = Kaleidoscope
 [pager]
   log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
   show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
@@ -76,3 +77,8 @@
   required = true
 [difftool "Kaleidoscope"]
     cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+    tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
