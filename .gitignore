@@ -1,5 +1,7 @@
 zprezto
 private
+config/
+kubeconfig
 maid/*.log
 vim/.netrwhist
 vim/backup/*.swp
