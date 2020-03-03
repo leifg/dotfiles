@@ -15,6 +15,7 @@ read -d '' files << EOF
   gemrc
   gitconfig
   githelpers
+  irbrc
   private
   tmux.conf
   tmuxp
