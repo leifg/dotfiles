@@ -22,7 +22,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
-# load kerl and kiex
+# load gh
+
+if which gh > /dev/null; then eval "$(gh completion -s zsh)"; fi
 
 # load various variables
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
