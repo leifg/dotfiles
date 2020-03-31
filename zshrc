@@ -6,11 +6,23 @@
 #
 
 # Source Prezto.
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# load various variables
+[[ -s "$HOME/.private" ]] && source "$HOME/.private"
+[[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
+[[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
+
+# load aliases
+
+[[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # load rbenv
 
@@ -26,16 +38,3 @@ export NVM_DIR="$HOME/.nvm"
 
 if which gh > /dev/null; then eval "$(gh completion -s zsh)"; fi
 
-# load various variables
-[[ -s "$HOME/.private" ]] && source "$HOME/.private"
-[[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
-[[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
-
-# load aliases
-
-[[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases"
-
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-export ERL_AFLAGS="-kernel shell_history enabled"
