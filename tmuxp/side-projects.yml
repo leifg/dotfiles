@@ -1,14 +1,22 @@
 session_name: side-projects
 windows:
-- window_name: release_ping
+- window_name: yes-no-maybe
   layout: tiled
   shell_command_before:
-    - cd ~/projects/side_projects/release_ping
+    - cd ~/projects/side_projects/yes-no-maybe
   panes:
     - pane
-- window_name: release_ping_frontend
+- window_name: formulon
   layout: tiled
   shell_command_before:
-    - cd ~/projects/side_projects/release_ping-frontend
+    - cd ~/projects/side_projects/formulon
   panes:
+    - pane
+    - pane
+- window_name: formulon-frontend
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/side_projects/formulon-frontend
+  panes:
+    - pane
     - pane
