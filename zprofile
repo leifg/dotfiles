@@ -44,6 +44,9 @@ typeset -gU cdpath fpath mailpath path
 path=(
   ~/bin
   /usr/local/{bin,sbin}
+  $GOPATH/bin:$PATH
+  /usr/local/opt/postgresql@9.6/bin
+  /usr/local/opt/redis@3.2/bin
   $path
 )
 
