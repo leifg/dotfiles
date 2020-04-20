@@ -53,3 +53,6 @@ export NVM_DIR="$HOME/.nvm"
 
 if which gh > /dev/null; then eval "$(gh completion -s zsh)"; fi
 
+# load nodenv
+
+eval "$(nodenv init -)"
