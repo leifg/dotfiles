@@ -8,10 +8,6 @@ imap <left> <nop>
 imap <right> <nop>
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Bundle 'gmarik/vundle'
-call vundle#end()
 
 syntax on
 set number
