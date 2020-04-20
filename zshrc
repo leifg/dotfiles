@@ -16,6 +16,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+bindkey -e
+
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
