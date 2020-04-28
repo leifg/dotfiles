@@ -18,9 +18,10 @@ setopt appendhistory
 
 bindkey -e
 
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# install via npm install --global pure-prompt
+autoload -U promptinit; promptinit
+prompt pure
+zstyle :prompt:pure:prompt:success color 'green'
 
 # load various variables
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
