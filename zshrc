@@ -16,8 +16,6 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-bindkey -e
-
 # install via npm install --global pure-prompt
 autoload -U promptinit; promptinit
 prompt pure
@@ -31,6 +29,10 @@ zstyle :prompt:pure:prompt:success color 'green'
 # load aliases
 
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases"
+
+# load keybindings
+
+[[ -s "$HOME/.keybindings" ]] && source "$HOME/.keybindings"
 
 # load rbenv
 
