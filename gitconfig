@@ -50,6 +50,11 @@
   l = "!. ~/.githelpers && pretty_git_log"
   la = !git l --all
 
+  # branch compare
+  # compares two branches and shows the commit
+  # reference: https://til.hashrocket.com/posts/18139f4f20-list-different-commits-between-two-branches
+  bc =  "!f() {  git log --left-right --graph --cherry-pick --oneline ${1}...${2}; }; f"
+
 [mergetool]
   keepBackup = false
 [merge]
