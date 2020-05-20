@@ -1,6 +1,6 @@
 [user]
   name = Leif Gensert
-  signingkey = DF6549FF
+  signingkey = 337AE6CB4383FA63
   email = leif@leif.io
 [core]
   editor = vim
