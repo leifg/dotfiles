@@ -7,6 +7,8 @@ brew "gpg"
 brew "jq"
 brew "the_silver_searcher"
 brew "python"
+brew "docker"
+brew "wget"
 
 # Node
 brew "nvm"
@@ -33,6 +35,15 @@ cask "whatsapp"
 cask "daisydisk"
 cask "quitter"
 cask "expressvpn"
+cask "dropbox"
+cask "transmit"
+cask "boxcryptor"
+cask "zoomus"
+cask "postico"
+cask "moneymoney"
+cask "docker"
+cask "backblaze"
 
 # Mac App Store Only
 # Spark
+# Deliveries
