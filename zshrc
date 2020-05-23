@@ -34,6 +34,11 @@ zstyle :prompt:pure:prompt:success color 'green'
 
 [[ -s "$HOME/.zsh/keybindings" ]] && source "$HOME/.zsh/keybindings"
 
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit && compinit
+
 # load rbenv
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
