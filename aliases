@@ -1,6 +1,0 @@
-alias be="bundle exec"
-alias mtf="git log --pretty=format: --name-only | grep -v '^$' | sort | uniq -c | sort -rg"
-alias dcu="docker-compose up -d --build"
-alias dcl="docker-compose logs -t --follow --tail=500"
-alias startmux="tmuxp load ~/.tmuxp/*.yml"
-alias debux='hyper run -e HOST=$(hyper ps | grep release_ping | awk '"'"'{print $1}'"'"') -e APP=release_ping -e NODE_COOKIE="${NODE_COOKIE}" --rm -it leifg/debux'

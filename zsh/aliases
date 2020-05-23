@@ -1,0 +1,3 @@
+alias be="bundle exec"
+alias mtf="git log --pretty=format: --name-only | grep -v '^$' | sort | uniq -c | sort -rg"
+alias startmux="tmuxp load ~/.tmuxp/*.yml"

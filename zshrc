@@ -28,11 +28,11 @@ zstyle :prompt:pure:prompt:success color 'green'
 
 # load aliases
 
-[[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases"
+[[ -s "$HOME/.zsh/aliases" ]] && source "$HOME/.zsh/aliases"
 
 # load keybindings
 
-[[ -s "$HOME/.keybindings" ]] && source "$HOME/.keybindings"
+[[ -s "$HOME/.zsh/keybindings" ]] && source "$HOME/.zsh/keybindings"
 
 # load rbenv
 
