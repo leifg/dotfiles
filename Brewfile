@@ -39,11 +39,13 @@ cask "dropbox"
 cask "transmit"
 cask "boxcryptor"
 cask "zoomus"
-cask "postico"
+cask "tableplus"
 cask "moneymoney"
 cask "docker"
 cask "backblaze"
+cask "notion"
 
 # Mac App Store Only
 # Spark
 # Deliveries
+# DaftCloud
