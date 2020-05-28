@@ -23,6 +23,7 @@ read -d '' files << EOF
   vimrc
   zlogin
   zlogout
+  zprofile
   zshenv
   zshrc
   zsh

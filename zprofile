@@ -32,10 +32,6 @@ fi
 #
 # Paths
 #
-
-export GOPATH=$HOME/projects/go_workspace
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 
@@ -48,7 +44,6 @@ typeset -gU cdpath fpath mailpath path
 path=(
   ~/bin
   /usr/local/{bin,sbin}
-  $GOPATH/bin:$PATH
   $path
 )
 
