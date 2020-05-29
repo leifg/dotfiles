@@ -28,6 +28,9 @@
   dh1 = diff HEAD~1
   serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
 
+  # shows the current branch in short form
+  cb = rev-parse --abbrev-ref HEAD
+
   # Divergence (commits we added and commits remote added)
   div = divergence
 
