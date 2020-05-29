@@ -49,3 +49,4 @@ cask "notion"
 # Spark
 # Deliveries
 # DaftCloud
+# Paprika Recipe Manager 3
