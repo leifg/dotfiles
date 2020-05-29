@@ -17,6 +17,9 @@ brew "yarn"
 # Elixir
 brew "elixir"
 
+# Casks
+tap "buo/cask-upgrade"
+
 # MacOS Applications
 cask "visual-studio-code"
 cask "google-chrome"
