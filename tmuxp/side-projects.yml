@@ -1,11 +1,5 @@
 session_name: side-projects
 windows:
-- window_name: yes-no-maybe
-  layout: tiled
-  shell_command_before:
-    - cd ~/projects/side_projects/yes-no-maybe
-  panes:
-    - pane
 - window_name: formulon
   layout: tiled
   shell_command_before:
