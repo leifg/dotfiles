@@ -47,6 +47,7 @@ cask "moneymoney"
 cask "docker"
 cask "backblaze"
 cask "notion"
+cask "syncthing"
 
 # Mac App Store Only
 # Spark
