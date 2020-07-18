@@ -9,6 +9,7 @@ brew "the_silver_searcher"
 brew "python"
 brew "docker"
 brew "wget"
+brew "watch"
 
 # Node
 brew "nvm"
