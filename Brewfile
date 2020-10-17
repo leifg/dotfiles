@@ -54,6 +54,7 @@ cask "notion"
 cask "syncthing"
 
 # Mac App Store
+mas "Keynote", id: 409183694
 mas "Spark", id: 1176895641
 mas "Deliveries", id: 290986013
 mas "DaftCloud", id: 1320450034
