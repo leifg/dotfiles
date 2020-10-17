@@ -1,15 +1,21 @@
+# Taps
 tap "homebrew/cask"
+tap "buo/cask-upgrade"
+tap "charmbracelet/tap"
 
 brew "git"
-brew "gh"
 brew "tmux"
+brew "mas"
 brew "gpg"
+brew "gh"
 brew "jq"
 brew "the_silver_searcher"
 brew "python"
-brew "docker"
 brew "wget"
 brew "watch"
+brew "youtube-dl"
+brew "glow"
+brew "charm"
 
 # Node
 brew "nvm"
@@ -17,9 +23,6 @@ brew "yarn"
 
 # Elixir
 brew "elixir"
-
-# Casks
-tap "buo/cask-upgrade"
 
 # MacOS Applications
 cask "visual-studio-code"
@@ -50,8 +53,8 @@ cask "backblaze"
 cask "notion"
 cask "syncthing"
 
-# Mac App Store Only
-# Spark
-# Deliveries
-# DaftCloud
-# Paprika Recipe Manager 3
+# Mac App Store
+mas "Spark", id: 1176895641
+mas "Deliveries", id: 290986013
+mas "DaftCloud", id: 1320450034
+mas "Paprika Recipe Manager 3", id: 1303222628
