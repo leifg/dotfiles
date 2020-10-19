@@ -13,6 +13,7 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 read -d '' files << EOF
   Brewfile
   gemrc
+  gitattributes
   gitconfig
   githelpers
   irbrc

@@ -5,6 +5,7 @@
 [core]
   editor = vim
   excludesfile = /Users/leifg/.gitignore_global
+  attributesfile = /Users/leifg/.gitattributes
 [diff]
 [color]
   ui = auto
