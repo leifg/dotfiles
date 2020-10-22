@@ -4,6 +4,7 @@ tap "buo/cask-upgrade"
 tap "charmbracelet/tap"
 
 brew "git"
+brew "git-delta"
 brew "tmux"
 brew "mas"
 brew "gpg"

@@ -4,6 +4,7 @@
   email = leif@leif.io
 [core]
   editor = vim
+  pager = delta
   excludesfile = /Users/leifg/.gitignore_global
   attributesfile = /Users/leifg/.gitattributes
 [diff]
@@ -75,12 +76,8 @@
 [diff]
   compactionHeuristic = 1
   tool = Kaleidoscope
-[pager]
-  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [interactive]
-  diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+  diffFilter = delta --color-only
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
@@ -94,3 +91,14 @@
   trustExitCode = true
 [pull]
 	rebase = false
+
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+  side-by-side = false
+  line-numbers = true
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
