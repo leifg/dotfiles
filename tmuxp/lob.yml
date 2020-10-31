@@ -1,0 +1,43 @@
+session_name: lob
+windows:
+- window_name: dashboard
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/lob/dashboard
+  panes:
+    - pane
+    - pane
+- window_name: lob-api
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/lob/lob-api
+  panes:
+    - pane
+    - pane
+    - pane
+    - pane
+- window_name: dora
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/lob/dora
+  panes:
+    - pane
+    - pane
+    - pane
+    - pane
+- window_name: epf
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/lob/epf_asset_manager
+  panes:
+    - pane
+    - pane
+- window_name: scripts
+  layout: tiled
+  shell_command_before:
+    - cd ~/projects/lob/scripts
+  panes:
+    - pane
+    - pane
+    - pane
+    - pane

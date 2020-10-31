@@ -11,6 +11,8 @@ export LANG=en_US.UTF-8
 
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+export AWS_REGION=us-west-2
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -25,6 +27,7 @@ zstyle :prompt:pure:prompt:success color 'green'
 [[ -s "$HOME/.private" ]] && source "$HOME/.private"
 [[ -s "$TMUXIFIER/init.sh" ]] && source "$TMUXIFIER/init.sh"
 [[ -s "$TMUXIFIER/tmuxifier.zsh" ]] && source "$TMUXIFIER/tmuxifier.zsh"
+[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 
 # load aliases
 
@@ -45,9 +48,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # load nvm
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+[[ -s "/usr/local/opt/nvm/etc/bash_completion" ]] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # load gh
 
