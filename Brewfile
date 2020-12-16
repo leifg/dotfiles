@@ -17,6 +17,7 @@ brew "watch"
 brew "youtube-dl"
 brew "glow"
 brew "charm"
+brew "coreutils"
 
 # Node
 brew "nvm"
