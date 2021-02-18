@@ -1,16 +1,16 @@
 session_name: side-projects
 windows:
-- window_name: formulon
+- window_name: roundhay-api
   layout: tiled
   shell_command_before:
-    - cd ~/projects/side_projects/formulon
+    - cd ~/projects/side_projects/roundhay_api
   panes:
     - pane
     - pane
-- window_name: formulon-frontend
+- window_name: roundhay-frontend
   layout: tiled
   shell_command_before:
-    - cd ~/projects/side_projects/formulon-frontend
+    - cd ~/projects/side_projects/roundhay
   panes:
     - pane
     - pane
