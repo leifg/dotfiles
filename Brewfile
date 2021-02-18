@@ -2,6 +2,7 @@
 tap "homebrew/cask"
 tap "buo/cask-upgrade"
 tap "charmbracelet/tap"
+tap "heroku/brew"
 
 brew "git"
 brew "git-delta"
@@ -25,6 +26,9 @@ brew "yarn"
 
 # Elixir
 brew "elixir"
+
+# Deployment
+brew "heroku"
 
 # MacOS Applications
 cask "visual-studio-code"
@@ -54,6 +58,8 @@ cask "docker"
 cask "backblaze"
 cask "notion"
 cask "syncthing"
+cask "rectangle"
+cask "signal"
 
 # Mac App Store
 mas "Xcode", id: 497799835  
