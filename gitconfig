@@ -60,6 +60,7 @@
   # compares two branches and shows the commit
   # reference: https://til.hashrocket.com/posts/18139f4f20-list-different-commits-between-two-branches
   bc =  "!f() {  git log --left-right --graph --cherry-pick --oneline ${1}...${2}; }; f"
+  hist = "!f() { for i in $(seq 9 $END); do echo "@{-$i}: `git rev-parse --abbrev-ref @{-$i}`"; done }; f "
 
 [mergetool]
   keepBackup = false
